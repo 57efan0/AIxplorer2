@@ -1,0 +1,274 @@
+/* === Página de Perfil === */
+/* === Perfil principal === */
+
+.profile-title {
+  text-align: center;
+  margin: 3rem;
+}
+
+.profile-card {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem 6rem;
+}
+
+/* Izquierda: info */
+.profile-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 320px;
+}
+
+.profile-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid #00bcd4;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #222;
+}
+
+.profile-role {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.profile-edit-btn {
+  margin-top: 0.8rem;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.profile-edit-btn:hover {
+  background-color: #009bb3;
+}
+
+/* Derecha: actividad */
+.profile-activity {
+  flex: 1;
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  min-width: 320px;
+}
+
+.profile-activity h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.activity-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.activity-title {
+  font-weight: 600;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.activity-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.activity-vs .model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activity-vs .model img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.activity-vs .vs {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+/* === Sección de favoritos y reseñas === */
+.favorites-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  margin: 3rem 6rem;
+}
+
+/* Bloques internos */
+.favorites-list,
+.reviews-list {
+  flex: 1;
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  min-width: 320px;
+}
+
+/* Títulos */
+.favorites-list h3,
+.reviews-list h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Lista de favoritos */
+.favorites-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorites-list li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.favorites-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de reseñas */
+.reviews-list .review {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-list .review h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #0077cc;
+}
+
+.reviews-list .review p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.new-ia-btn {
+  display: flex;
+  justify-self: center;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 3rem 0 6rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.new-ia-btn:hover {
+  background-color: #009bb3;
+  transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 1rem;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 1rem;
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-avatar img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-activity {
+    width: 100%;
+  }
+
+  .favorites-section {
+    flex-direction: column;
+    margin: 1.5rem 1rem;
+  }
+
+  .new-ia-btn {
+    align-self: flex-end;
+    padding: 0.8rem 1.6rem;
+  }
+}
+

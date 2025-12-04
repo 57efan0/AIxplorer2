@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil | AIxplorer</title>
+  <link rel="icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="./perfil.css" />
+</head>
+<body>
+
+  <!-- === NAVBAR === -->
+  <nav class="navbar">
+
+    <div class="logo-container">
+      <img src="../favicon.ico" alt="AIxplorer logo">
+      <h1 class="logo">AIxplorer</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="comparador.html">Comparador</a></li>
+      <li><a href="perfil.html" class="active">Perfil</a></li>
+      <li><a href="buscar.html">Buscar</a></li>
+    </ul>
+
+</nav>
+
+
+  <!-- === PERFIL === -->
+  <!-- <main class="profile-section"> -->
+   <h1 class="profile-title">Mi perfil</h1>
+   <section class="profile-card">
+    <!-- 🧍 Bloque izquierdo: info de usuario -->
+    <div class="profile-info">
+        <div class="profile-details">
+            <div class="profile-avatar">
+                <img src="../images/blank-profile-picture-973460_1280.webp" alt="Avatar de Stefano Ciani" />
+            </div>
+            <div>
+                <h3>Nombre y Apellido</h3>
+                <h2 class="profile-name">Stefano Ciani</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ⚡ Bloque derecho: actividad -->
+    <div class="profile-activity">
+        <h3>Actividad reciente</h3>
+        <div class="activity-box">
+        <p class="activity-title">Último VS comparado</p>
+        <div class="activity-vs">
+            <div class="model model-a">
+                <img src="../images/openai.webp" alt="ChatGPT" />
+                <span>ChatGPT</span>
+            </div>
+            <span class="vs">VS</span>
+            <div class="model model-b">
+                <img src="../images/clau.png" alt="Claude 3.5" />
+                <span>Claude 3.5</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ⚡ Favoritos y Reseñas -->
+    <section class="favorites-section">
+    <!-- Bloque izquierdo: lista de favoritos -->
+    <div class="favorites-list">
+        <h3>Favoritos</h3>
+        <ul>
+        <li>ChatGPT</li>
+        <li>Claude 3.5</li>
+        <li>Gemini 1.5</li>
+        <li>Llama 3</li>
+        </ul>
+    </div>
+
+    <!-- Bloque derecho: reseñas -->
+    <div class="reviews-list">
+        <h3>Reseñas recientes</h3>
+        <div class="review">
+        <h4>ChatGPT</h4>
+        <p>Excelente desempeño en tareas creativas, pero algo lento en contexto largo.</p>
+        </div>
+        <div class="review">
+        <h4>Claude 3.5</h4>
+        <p>Gran capacidad de comprensión contextual y respuestas más naturales.</p>
+        </div>
+    </div>
+
+</section>
+<button class="new-ia-btn">+ Publicar nueva IA</button>
+
+
+   
+
+  <!-- === FOOTER === -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>AIxplorer</h3>
+        <p>Explorá, compará y descubrí el futuro de la inteligencia artificial.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="comparador.html">Herramientas</a></li>
+          <li><a href="novedades.html">Recursos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AIxplorer. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- === SCRIPT MENU === -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

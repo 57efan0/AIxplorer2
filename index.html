@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>AIxplorer</title>
+
+  <link rel="icon" href="./favicon-aixplorer.ico">
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+ <header>
+  <nav class="navbar">
+
+    <div class="logo-container">
+      <img src="favicon.ico" alt="AIxplorer logo">
+      <h1 class="logo">AIxplorer</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">=</button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="paginas/novedades.html">Novedades</a></li>
+      <li><a href="paginas/comparador.html">Comparador</a></li>
+      <li><a href="paginas/perfil.html">Perfil</a></li>
+      <li><a href="paginas/buscar.html">Buscar</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+ 
+ <!-- Hero -->
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Explorá el universo de herramientas AI</h2>
+      <p>Descubrí, compará y elegí entre cientos de soluciones inteligentes.</p>
+
+
+<!-- Contenedor común para búsqueda y botones -->
+      <div class="search-block">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar herramienta..." />
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="button-row">
+          <button class="compare-btn">Comparar</button>
+          <button class="explore-btn">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+    <section class="comparison-wrapper section container">
+  <div class="comparison-left">
+  <h2>Comienza a comparar</h2>
+
+  <!-- Modelo 1 -->
+  <div class="model-box">
+    <div class="logo-box">
+      <img src="images/openai.webp" alt="GPT-4" class="model-logo" />
+    </div>
+    <input type="text" placeholder="Buscar modelo..." />
+  </div>
+
+  <!-- VS -->
+  <div class="vs-icon">
+    <img src="images/vs.png" alt="VS" />
+  </div>
+
+  <!-- Modelo 2 -->
+  <div class="model-box">
+    <div class="logo-box">
+      <img src="images/clau.png" alt="Claude" class="model-logo" />
+    </div>
+    <input type="text" placeholder="Buscar modelo..." />
+  </div>
+
+  <!-- Botón -->
+  <div class="compare-btn-wrapper">
+    <button class="compare-btn">Comparar</button>
+  </div>
+</div>
+
+
+  <!-- Bloque derecho: tabla comparativa -->
+  <div class="comparison-right">
+    <h3 class="table-title">Tabla comparativa</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Categoría</th>
+          <th>GPT-4</th>
+          <th>Claude 3.5 Sonnet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Precio</td>
+          <td><span class="tag paid">Pago</span></td>
+          <td><span class="tag free">Gratis</span></td>
+        </tr>
+        <tr>
+          <td>Visión integrada</td>
+          <td>✅</td>
+          <td>❌</td>
+        </tr>
+        <tr>
+          <td>Plugins/extensiones</td>
+          <td>✅</td>
+          <td>❌</td>
+        </tr>
+        <tr>
+          <td>Código</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>Recomendado para</td>
+          <td>Escritores, artistas</td>
+          <td>Investigadores</td>
+        </tr>
+        <tr>
+          <td>Idiomas soportados</td>
+          <td>+26 idiomas</td>
+          <td>+10 idiomas</td>
+        </tr>
+        <tr>
+          <td>Última actualización</td>
+          <td>Octubre 2025</td>
+          <td>Septiembre 2025</td>
+        </tr>
+        <tr>
+          <td>Tamaño del modelo</td>
+          <td>Alto (más recursos)</td>
+          <td>Medio (más liviano)</td>
+        </tr>
+        <tr>
+          <td>Integración con apps</td>
+          <td>Office, Teams, Edge</td>
+          <td>Slack, Notion</td>
+        </tr>
+        <tr>
+          <td>Precisión técnica</td>
+          <td>Muy alta</td>
+          <td>Alta</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+    <!-- Categorías -->
+    <section class="categories">
+      <h2>Categorías disponibles</h2>
+      <div class="category-grid">
+
+        
+        <div class="category-card">
+          <img src="images/camara.png" alt="AI Image Tools" />
+          <h3>AI Image Tools</h3>
+          <p>Generación y edición de imágenes.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/business.png" alt="AI Business Tools" />
+          <h3>AI Business Tools</h3>
+          <p>Automatización y productividad empresarial.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/productividad.png" alt="AI Productivity Tools" />
+          <h3>AI Productivity Tools</h3>
+          <p>Organización y eficiencia personal.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/texto.png" alt="AI Text Generators" />
+          <h3>AI Text Generators</h3>
+          <p>Creación de contenido escrito.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/audio.png" alt="AI Audio Generators" />
+          <h3>AI Audio Generators</h3>
+          <p>Síntesis y edición de audio.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/video.png" alt="AI Video Tools" />
+          <h3>AI Video Tools</h3>
+          <p>Producción y edición de video.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/web.png" alt="AI Code Tools" />
+          <h3>AI Code Tools</h3>
+          <p>Asistentes para desarrollo y programación.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/diseno.png" alt="AI Art Generators" />
+          <h3>AI Art Generators</h3>
+          <p>Creación artística con IA.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/automatizacion.png" alt="Automation Tools" />
+          <h3>Automation Tools</h3>
+          <p>Flujos automáticos y tareas repetitivas.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="images/dot.png" alt="Misc AI Tools" />
+          <h3>Misc AI Tools</h3>
+          <p>Otras herramientas útiles y variadas.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Novedades -->
+    <section class="ai-news section container">
+      <h2>Novedades destacadas en IA</h2>
+      <div class="news-grid">
+
+        <article class="news-item">
+          <img src="images/sora2.jpg" alt="Sora 2 de OpenAI" />
+          <h3>Sora 2 cambia el juego por completo con su última actualización</h3>
+          <p>OpenAI lanza una versión mejorada de su generador de video con física realista, audio sincronizado y control total sobre cameos.</p>
+          <span>#video #generativeAI #OpenAI</span>
+        </article>
+
+        <article class="news-item">
+          <img src="images/mixboard.png" alt="Mixboard Google Labs" />
+          <h3>Mixboard revoluciona la edición visual con IA conversacional</h3>
+          <p>Google presenta un lienzo inteligente que permite editar imágenes con lenguaje natural.</p>
+          <span>#visualdesign #GoogleLabs #NanoBanana</span>
+        </article>
+
+        <article class="news-item">
+          <img src="images/claude35.png" alt="Claude 3.5 de Anthropic" />
+          <h3>Claude 3.5 sorprende con razonamiento avanzado y visión integrada</h3>
+          <p>Anthropic lanza su modelo más potente hasta la fecha, capaz de interpretar gráficos y ejecutar código.</p>
+          <span>#chatbot #reasoning #Anthropic</span>
+        </article>
+
+        <article class="news-item">
+          <img src="images/dalle3 .jpg" alt="DALL·E 4 de OpenAI" />
+          <h3>DALL·E 4 permite editar imágenes directamente desde el canvas</h3>
+          <p>La nueva versión incluye edición contextual, estilos cinematográficos y mayor coherencia visual.</p>
+          <span>#imagegen #OpenAI #dalle</span>
+        </article>
+
+        <article class="news-item">
+          <img src="images/futuro-laboral.jpg" alt="IA y profesiones en riesgo" />
+          <h3>La IA redefine el futuro laboral según OpenAI</h3>
+          <p>Un nuevo estudio revela que más del 50% de las tareas en comercio minorista ya pueden ser automatizadas con IA.</p>
+          <span>#automatización #OpenAI #futuroLaboral</span>
+        </article>
+
+      <article class="news-item">
+        <img src="images/inversion-ia.jpg" alt="Inversión récord en IA 2025" />
+        <h3>2025 rompe récords de inversión en IA</h3>
+        <p>Las startups de inteligencia artificial recibieron más de 192 mil millones de dólares en lo que va del año.</p>
+        <span>#inversión #startups #IAglobal</span>
+      </article>
+
+
+      </div>
+    </section>
+
+
+    
+
+
+   <section class="ai-section">
+  <div class="ai-inner">
+    <!-- Columna izquierda: herramientas AI -->
+    <div class="ai-column ai-tools">
+      <h2>Herramientas AI más populares</h2>
+      <p class="section-subtitle">Las 5 herramientas que están marcando el ritmo de la inteligencia artificial hoy.</p>
+      <div class="tool-list">
+
+
+        <!-- ChatGPT -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-logo bordered">
+              <img src="images/openai.webp" alt="Logo ChatGPT" />
+            </div>
+            <div class="tool-info">
+              <h3>ChatGPT</h3>
+              <p>Investiga, crea y automatiza tareas con el líder en IA.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#chatbot</span>
+            <span>#writing</span>
+            <span>#research</span>
+          </div>
+        </div>
+
+        <!-- Claude 3.5 Sonnet -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-logo bordered">
+              <img src="images/clau.png" alt="Logo Claude" />
+            </div>
+            <div class="tool-info">
+              <h3>Claude 3.5 Sonnet</h3>
+              <p>El modelo más avanzado de Claude: más contenido y código más rápido.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#code assistant</span>
+            <span>#research</span>
+          </div>
+        </div>
+
+        <!-- Midjourney -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-logo bordered">
+              <img src="images/midjo.svg" alt="Logo Midjourney" />
+            </div>
+            <div class="tool-info">
+              <h3>Midjourney</h3>
+              <p>IA de generación de imágenes desde texto con control artístico.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#image editing</span>
+            <span>#photo arts</span>
+          </div>
+        </div>
+
+        <!-- Gemini Pro -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-logo bordered">
+              <img src="images/gemini.png" alt="Logo Gemini Pro" />
+            </div>
+            <div class="tool-info">
+              <h3>Gemini Pro</h3>
+              <p>Modelo multimodal de Google con integración nativa en Android y Workspace.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#multimodal</span>
+            <span>#productivity</span>
+            <span>#mobile</span>
+          </div>
+        </div>
+
+        <!-- DALL·E 3 -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-logo bordered">
+              <img src="images/openai.webp" alt="Logo DALL·E 3" />
+            </div>
+            <div class="tool-info">
+              <h3>DALL·E 3</h3>
+              <p>Generación de imágenes desde texto con edición integrada y control de estilo.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#image generation</span>
+            <span>#creative tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Columna derecha: videos en tendencia -->
+    <div class="ai-column ai-videos">
+      <h2>Videos en tendencia</h2>
+      <p class="section-subtitle">Lo que está captando la atención del mundo tech esta semana.</p>
+      <div class="video-list">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/zi5XyefRSEg" title="Tendencias IA 2025" allowfullscreen></iframe>
+          <p>¿Cuáles son las tendencias de inteligencia artificial 2025?</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/28CLia4hSxs" title="Robot antigravedad IA" allowfullscreen></iframe>
+          <p>La IA sorprende al mundo este mes: Robot antigravedad</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/r23rNosmve0" title="IA y educación" allowfullscreen></iframe>
+          <p>La inteligencia artificial y la educación</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>AIxplorer</h3>
+      <p>Explorá, compará y descubrí el futuro de la inteligencia artificial.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Secciones</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Herramientas</a></li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIxplorer. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.getElementById('navMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

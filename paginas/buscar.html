@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar | AIxplorer</title>
+
+
+  <link rel="icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="buscar.css" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <nav class="navbar">
+
+    <div class="logo-container">
+      <img src="../favicon.ico" alt="AIxplorer logo">
+      <h1 class="logo">AIxplorer</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="comparador.html">Comparador</a></li>
+      <li><a href="perfil.html" class="active">Perfil</a></li>
+      <li><a href="buscar.html">Buscar</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main class="buscar-main">
+
+    <!-- TITULO Y BUSQUEDA -->
+    <section class="buscar-top">
+      <div class="buscar-left">
+        <h2>Buscar</h2>
+        <p>Buscá entre las mejores herramientas de IA del momento y encontrá la solución perfecta para tu proyecto.</p>
+      </div>
+
+      <div class="buscar-right">
+        <input type="text" placeholder="Ingresá una herramienta..." />
+
+        <div class="buscar-buttons">
+          <button class="btn-light">Explorar</button>
+          <button class="btn-dark">Buscar</button>
+        </div>
+      </div>
+    </section>
+
+       <!-- Categorías -->
+    <section class="categories">
+      <h2>Categorías disponibles</h2>
+      <div class="category-grid">
+
+        
+        <div class="category-card">
+          <img src="../images/camara.png" alt="AI Image Tools" />
+          <h3>AI Image Tools</h3>
+          <p>Generación y edición de imágenes.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/business.png" alt="AI Business Tools" />
+          <h3>AI Business Tools</h3>
+          <p>Automatización y productividad empresarial.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/productividad.png" alt="AI Productivity Tools" />
+          <h3>AI Productivity Tools</h3>
+          <p>Organización y eficiencia personal.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/texto.png" alt="AI Text Generators" />
+          <h3>AI Text Generators</h3>
+          <p>Creación de contenido escrito.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/audio.png" alt="AI Audio Generators" />
+          <h3>AI Audio Generators</h3>
+          <p>Síntesis y edición de audio.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/video.png" alt="AI Video Tools" />
+          <h3>AI Video Tools</h3>
+          <p>Producción y edición de video.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/web.png" alt="AI Code Tools" />
+          <h3>AI Code Tools</h3>
+          <p>Asistentes para desarrollo y programación.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/diseno.png" alt="AI Art Generators" />
+          <h3>AI Art Generators</h3>
+          <p>Creación artística con IA.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/automatizacion.png" alt="Automation Tools" />
+          <h3>Automation Tools</h3>
+          <p>Flujos automáticos y tareas repetitivas.</p>
+        </div>
+
+        <div class="category-card">
+          <img src="../images/dot.png" alt="Misc AI Tools" />
+          <h3>Misc AI Tools</h3>
+          <p>Otras herramientas útiles y variadas.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+<!-- TRENDING IA -->
+<section class="trending-section">
+
+  <!-- COLUMNA IZQUIERDA: lista de categorías -->
+  <div class="trending-left">
+    <h4>Más populares</h4>
+    <ul class="categoria-list">
+      <li><a href="#">💬 Chatbots & Asistentes virtuales</a></li>
+      <li><a href="#">✍️ Generación de texto / Escritura</a></li>
+      <li><a href="#">🖼 Imagen & Diseño</a></li>
+      <li><a href="#">🎬 Video & Animación</a></li>
+      <li><a href="#">🎵 Audio & Música</a></li>
+      <li><a href="#">⚙️ Productividad & Automatización</a></li>
+      <li><a href="#">📈 Negocios & Marketing</a></li>
+      <li><a href="#">🎓 Educación & Aprendizaje</a></li>
+      <li><a href="#">🔍 Investigación & Data</a></li>
+      <li><a href="#">💻 Tecnología & Programación</a></li>
+      <li><a href="#">🎨 Diseño UX/UI</a></li>
+      <li><a href="#">🛒 E-commerce & Customer Support</a></li>
+    </ul>
+  </div>
+
+  <!-- COLUMNA DERECHA: tarjetas de IAs -->
+  <div class="trending-right">
+
+    <h3>Trending IA</h3>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/openai.webp" alt="ChatGPT" />
+      <div class="trending-info">
+        <h4>ChatGPT</h4>
+        <p class="trending-desc">Investiga, crea y automatiza tareas con el líder en IA.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.7</p>
+      </div>
+    </div>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/copilot.png" alt="Copilot" />
+      <div class="trending-info">
+        <h4>Copilot</h4>
+        <p class="trending-desc">Asistente inteligente integrado con Windows y Office.</p>
+        <p class="trending-rating">⭐⭐⭐⭐ 4.4</p>
+      </div>
+    </div>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/gemini.png" alt="Gemini" />
+      <div class="trending-info">
+        <h4>Gemini</h4>
+        <p class="trending-desc">Modelo de Google con capacidades multimodales avanzadas.</p>
+        <p class="trending-rating">⭐⭐⭐⭐ 4.5</p>
+      </div>
+    </div>
+
+  
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/clau.png" alt="Claude" />
+      <div class="trending-info">
+        <h4>Claude 3.5 Sonnet</h4>
+        <p class="trending-desc">Modelo avanzado de Anthropic con fuerte razonamiento lógico.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.8</p>
+      </div>
+    </div>
+
+    
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/midjo.svg" alt="Midjourney" />
+      <div class="trending-info">
+        <h4>Midjourney</h4>
+        <p class="trending-desc">Generación de imágenes con estilo artístico profesional.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.9</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+
+  <!-- === FOOTER === -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>AIxplorer</h3>
+        <p>Explorá, compará y descubrí el futuro de la inteligencia artificial.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="comparador.html">Herramientas</a></li>
+          <li><a href="novedades.html">Recursos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AIxplorer. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- === SCRIPT MENU === -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+

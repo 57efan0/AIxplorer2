@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novedades | AIxplorer</title>
+
+  <link rel="icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="./novedades.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <nav class="navbar">
+
+    <div class="logo-container">
+      <img src="../favicon.ico" alt="AIxplorer logo" />
+      <h1 class="logo">AIxplorer</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="novedades.html" class="active">Novedades</a></li>
+      <li><a href="comparador.html">Comparador</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="buscar.html">Buscar</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main class="news-main">
+
+    <!-- Sección Novedades -->
+        <!-- Sección Novedades -->
+    <section class="news-section">
+      <h2>Novedades</h2>
+      <p>Últimas noticias y actualizaciones sobre IA</p>
+
+      <!-- WRAPPER TIPO CARROUSEL -->
+      <div class="news-carousel">
+
+        <!-- Flecha izquierda (solo decorativa) -->
+        <button class="news-arrow left" aria-label="Ver novedades anteriores">
+          &#10094;
+        </button>
+
+        <!-- Las tarjetas que ya tenías -->
+        <div class="news-grid">
+          <article class="news-item">
+            <img src="../images/sora2.jpg" alt="Sora 2 de OpenAI" />
+            <h3>Sora 2 cambia el juego por completo con su última actualización</h3>
+            <p>
+              OpenAI lanza una versión mejorada de su generador de video con física
+              realista, audio sincronizado y control total sobre cameos.
+            </p>
+            <span>#video #generativeAI #OpenAI</span>
+          </article>
+
+          <article class="news-item">
+            <img src="../images/mixboard.png" alt="Mixboard Google Labs" />
+            <h3>Mixboard revoluciona la edición visual con IA conversacional</h3>
+            <p>
+              Google presenta un lienzo inteligente que permite editar imágenes con
+              lenguaje natural.
+            </p>
+            <span>#visualdesign #GoogleLabs #NanoBanana</span>
+          </article>
+
+          <article class="news-item">
+            <img src="../images/claude35.png" alt="Claude 3.5 de Anthropic" />
+            <h3>Claude 3.5 sorprende con razonamiento avanzado y visión integrada</h3>
+            <p>
+              Anthropic lanza su modelo más potente hasta la fecha, capaz de
+              interpretar gráficos y ejecutar código.
+            </p>
+            <span>#chatbot #reasoning #Anthropic</span>
+          </article>
+        </div>
+
+        <!-- Flecha derecha (solo decorativa) -->
+        <button class="news-arrow right" aria-label="Ver más novedades">
+          &#10095;
+        </button>
+
+      </div>
+    </section>
+
+
+
+    <!-- Sección Videos -->
+    <section class="videos-section">
+        <h2>Videos en tendencia</h2>
+        <p>Últimas noticias y actualizaciones sobre IA</p>
+
+        <div class="videos-carousel">
+            <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/zi5XyefRSEg"
+                title="Tendencias IA 2025"
+                allowfullscreen
+            ></iframe>
+            <p>¿Cuáles son las tendencias de inteligencia artificial 2025?</p>
+            </div>
+
+            <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/28CLia4hSxs"
+                title="Robot antigravedad IA"
+                allowfullscreen
+            ></iframe>
+            <p>La IA sorprende al mundo este mes: Robot antigravedad</p>
+            </div>
+
+            <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/r23rNosmve0"
+                title="IA y educación"
+                allowfullscreen
+            ></iframe>
+            <p>La inteligencia artificial y la educación</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- TRENDING IA -->
+<section class="trending-section">
+
+  <!-- COLUMNA IZQUIERDA: lista de categorías -->
+  <div class="trending-left">
+    <h4>Más populares</h4>
+    <ul class="categoria-list">
+      <li><a href="#">💬 Chatbots & Asistentes virtuales</a></li>
+      <li><a href="#">✍️ Generación de texto / Escritura</a></li>
+      <li><a href="#">🖼 Imagen & Diseño</a></li>
+      <li><a href="#">🎬 Video & Animación</a></li>
+      <li><a href="#">🎵 Audio & Música</a></li>
+      <li><a href="#">⚙️ Productividad & Automatización</a></li>
+      <li><a href="#">📈 Negocios & Marketing</a></li>
+      <li><a href="#">🎓 Educación & Aprendizaje</a></li>
+      <li><a href="#">🔍 Investigación & Data</a></li>
+      <li><a href="#">💻 Tecnología & Programación</a></li>
+      <li><a href="#">🎨 Diseño UX/UI</a></li>
+      <li><a href="#">🛒 E-commerce & Customer Support</a></li>
+    </ul>
+  </div>
+
+  <!-- COLUMNA DERECHA: tarjetas de IAs -->
+  <div class="trending-right">
+
+    <h3>Trending IA</h3>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/openai.webp" alt="ChatGPT" />
+      <div class="trending-info">
+        <h4>ChatGPT</h4>
+        <p class="trending-desc">Investiga, crea y automatiza tareas con el líder en IA.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.7</p>
+      </div>
+    </div>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/copilot.png" alt="Copilot" />
+      <div class="trending-info">
+        <h4>Copilot</h4>
+        <p class="trending-desc">Asistente inteligente integrado con Windows y Office.</p>
+        <p class="trending-rating">⭐⭐⭐⭐ 4.4</p>
+      </div>
+    </div>
+
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/gemini.png" alt="Gemini" />
+      <div class="trending-info">
+        <h4>Gemini</h4>
+        <p class="trending-desc">Modelo de Google con capacidades multimodales avanzadas.</p>
+        <p class="trending-rating">⭐⭐⭐⭐ 4.5</p>
+      </div>
+    </div>
+
+    <!-- IA #4 -->
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/clau.png" alt="Claude" />
+      <div class="trending-info">
+        <h4>Claude 3.5 Sonnet</h4>
+        <p class="trending-desc">Modelo avanzado de Anthropic con fuerte razonamiento lógico.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.8</p>
+      </div>
+    </div>
+
+    <!-- IA #5 -->
+    <div class="trending-card">
+      <img class="trending-icon-img" src="../images/midjo.svg" alt="Midjourney" />
+      <div class="trending-info">
+        <h4>Midjourney</h4>
+        <p class="trending-desc">Generación de imágenes con estilo artístico profesional.</p>
+        <p class="trending-rating">⭐⭐⭐⭐⭐ 4.9</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+   <!-- Footer -->
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>AIxplorer</h3>
+      <p>Explorá, compará y descubrí el futuro de la inteligencia artificial.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Secciones</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Herramientas</a></li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIxplorer. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.getElementById('navMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

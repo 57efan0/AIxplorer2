@@ -1,0 +1,329 @@
+
+
+.buscar-main {
+  max-width: 1200px;   
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+
+.buscar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.buscar-left h2 {
+  font-size: 3rem;
+}
+
+.buscar-left p {
+  margin-top: 10px;
+  color: #444;
+}
+
+.buscar-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.buscar-right input {
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.buscar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-light {
+  padding: 12px 20px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-dark {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ===========================
+   CATEGORÍAS (FULL-WIDTH)
+   =========================== */
+
+
+.categories {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);  
+  margin-right: calc(50% - 50vw);
+  margin-top: 60px;
+  margin-bottom: 80px;           
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+
+.category-grid {
+  max-width: 1200px;              
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Tarjetas de categoría */
+
+.category-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===========================
+   TRENDING IA + MÁS POPULARES
+   =========================== */
+
+/* Contenedor general de la sección */
+
+.trending-section {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  align-items: flex-start;
+}
+
+/* --- COLUMNA IZQUIERDA: lista de categorías --- */
+
+.trending-left {
+  width: 45%;
+}
+
+.trending-left h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.categoria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoria-list li {
+  margin-bottom: 6px;
+}
+
+.categoria-list a {
+  text-decoration: none;
+  color: #222;                 
+  display: block;
+  padding: 4px 0;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.categoria-list a:hover {
+  color: #000;                 
+  text-decoration: underline;  
+  cursor: pointer;
+}
+
+/* --- COLUMNA DERECHA: tarjetas de IAs --- */
+
+.trending-right {
+  width: 55%;
+}
+
+.trending-right h3 {
+  margin-bottom: 20px;
+}
+
+/* Tarjeta  */
+
+.trending-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.trending-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Icono de la IA */
+
+.trending-icon-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Texto dentro de la tarjeta */
+
+.trending-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.trending-desc {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.trending-rating {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* Tablet:  */
+@media (max-width: 900px) {
+  
+  .buscar-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .buscar-right {
+    width: 100%;
+  }
+
+  /* Categorías */
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* Trending */
+  .trending-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .trending-left,
+  .trending-right {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  /* MAIN */
+  .buscar-main {
+    padding: 20px 16px;
+  }
+
+  /* Título principal */
+  .buscar-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .buscar-right input {
+    padding: 12px;
+  }
+
+  .buscar-buttons {
+    flex-direction: column;
+  }
+
+  .btn-light,
+  .btn-dark {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  
+
+  .trending-card {
+    padding: 16px;
+  }
+
+  .trending-icon-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .trending-info h4 {
+    font-size: 1.05rem;
+  }
+
+  .trending-desc {
+    font-size: 0.9rem;
+  }
+}
+
+
